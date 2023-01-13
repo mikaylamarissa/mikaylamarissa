@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Final Project</title>
+    <meta charset="UTF-8">
+    <link href="styles/main.css" rel="stylesheet">
+    <!-- <script type="text/JavaScript" src="script/functions.js"></script> -->
+    <script type="text/JavaScript" src="script/main.js">
+    </script>
+</head>
+
+<body>
+
+    <div class="img">
+        <picture>
+            <source media="min-width:650px)" srset="images/pizza.jpg">
+            <source media="min-width:400px)" srset="images/pizza.jpg">
+            <img src="images/pizza.jpg" alt="Pizza" style="width:auto;">
+        </picture>
+    </div>
+    <h1>Final Assignment</h1>
+    <form method="post" name="myForm" action="https://httpbin.org/post" onsubmit="return (validateForm());">
+        <h2>Contact Information</h2>
+        <p><input type="hidden" name="difficulty" value="1"></p>
+        <p>
+            <label for="FirstName_tf">First Name</label>
+            <input type="text" name="FirstName_tf" id="FirstName_tf" value="">
+        </p>
+        <p>
+            <label for="LastName_tf">Last Name</label>
+            <input type="text" name="LastName_tf" id="LastName_tf" value="">
+        </p>
+        <p>
+            <label for="Address_tf">Address</label>
+            <input type="text" name="Address_tf" id="Address_tf" value="">
+        </p>
+        <p>
+            <label for="Phone_tf">Phone</label>
+            <input type="text" name="Phone_tf" id="Phone_tf" value="">
+        </p>
+        <p>
+            <label for="Email_tf">Email Address</label>
+            <input type="text" name="Email_tf" id="Email_tf" value="">
+        </p>
+        <h2>Pick Your Pizza Size</h2>
+        <p>
+            <input type="radio" name="Size_rg" id="10" value="10"
+                onclick="totalPrice()" />
+            <label>Small 10"</label>
+        </p>
+        <p>
+            <input type="radio" name="Size_rg" id="12" value="12"
+                onclick="totalPrice()" />
+            <label>Medium 12"</label>
+        </p>
+        <p>
+            <input type="radio" name="Size_rg" id="15" value="15"
+                onclick="totalPrice()" />
+            <label>Large 15"</label>
+        </p>
+        <h2>Toppings</h2>
+        <div id="checkboxes">
+            <p>
+                <input type="checkbox" name="Anchovies_cb" id="Anchovies_cb" value="yes"
+                    onclick="totalPrice()">
+                <label for="Anchovies_cb">Anchovies</label>
+            </p>
+            <p>
+                <input type="checkbox" name="DoubleCheese_cb" id="DoubleCheese_cb" value="yes"
+                    onclick="totalPrice()">
+                <label for="DoubleCheese_cb">Double Cheese</label>
+            </p>
+            <p>
+                <input type="checkbox" name="Pepperoni_cb" id="Pepperoni_cb" value="yes"
+                    onclick="totalPrice()">
+                <label for="Pepperoni_cb">Pepperoni</label>
+            </p>
+            <p>
+                <input type="checkbox" name="Mushroom_cb" id="Mushroom_cb" value="yes"
+                    onclick="totalPrice()">
+                <label for="Mushroom_cb">Mushrooms</label>
+            </p>
+        </div>
+        <h2>Totals</h2>
+        <p>
+            <label for="SubTotal_tb">SubTotal $:</label>
+            <input type="text" name="SubTotal_tb" id="SubTotal_tb" value="" readonly />
+        </p>
+        <p>
+            <label for="PST_tb">PST $:</label>
+            <input type="text" name="PST_tb" id="PST_tb" value="" readonly>
+        </p>
+        <p>
+            <label for="GST_tb">GST $:</label>
+            <input type="text" name="GST_tb" id="GST_tb" value="" readonly>
+        </p>
+        <p>
+            <label for="Total_tb">Total $:</label>
+            <input type="text" name="Total_tb" id="Total_tb" value="" readonly>
+        </p>
+        <h2>Payment</h2>
+        <p>
+            <select name="Payment_menu">
+                <option value="select">- Select Payment Method -</option>
+                <option value="cash">Cash</option>
+                <option value="debit">Debit</option>
+                <option value="credit">Credit Card</option>
+            </select>
+        </p>
+        <input type="submit" value="Submit" name="Submit_but" id="Submit_but">
+        <input type="reset">
+    </form>
+    <script type="text/JavaScript" scr="script/main.js"></script>
+</body>
+
+</html>
