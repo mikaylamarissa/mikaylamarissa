@@ -2,49 +2,65 @@
 <html lang="en">
 
 <head>
-    <title>Final Project</title>
+    <title>Margherita - Contact Information</title>
     <meta charset="UTF-8">
     <link href="styles/main.css" rel="stylesheet">
     <!-- <script type="text/JavaScript" src="script/functions.js"></script> -->
+    <link rel="stylesheet" href="https://use.typekit.net/vsx4gbn.css">
     <script type="text/JavaScript" src="script/main.js">
     </script>
 </head>
 
-<body>
-
-    <div class="img">
-        <picture>
-            <source media="min-width:650px)" srset="images/pizza.jpg">
-            <source media="min-width:400px)" srset="images/pizza.jpg">
-            <img src="images/pizza.jpg" alt="Pizza" style="width:auto;">
-        </picture>
-    </div>
-    <h1>Final Assignment</h1>
-    <form method="post" name="myForm" action="https://httpbin.org/post" onsubmit="return (validateForm());">
-        <h2>Contact Information</h2>
-        <p><input type="hidden" name="difficulty" value="1"></p>
-        <p>
-            <label for="FirstName_tf">First Name</label>
-            <input type="text" name="FirstName_tf" id="FirstName_tf" value="">
-        </p>
-        <p>
-            <label for="LastName_tf">Last Name</label>
-            <input type="text" name="LastName_tf" id="LastName_tf" value="">
-        </p>
-        <p>
-            <label for="Address_tf">Address</label>
-            <input type="text" name="Address_tf" id="Address_tf" value="">
-        </p>
-        <p>
-            <label for="Phone_tf">Phone</label>
-            <input type="text" name="Phone_tf" id="Phone_tf" value="">
-        </p>
-        <p>
-            <label for="Email_tf">Email Address</label>
-            <input type="text" name="Email_tf" id="Email_tf" value="">
-        </p>
-
-    </form>
+<body class="info_page">
+    <header>
+        <h1>margherita</h1>
+    </header>
+    <!-- <form method="post" name="myForm" action="https://httpbin.org/post" onsubmit="return (validateForm());"> -->
+        <div class="contact_info">
+            <h2>Contact Information</h2>
+            <p><input type="hidden" name="difficulty" value="1"></p>
+            <p>
+                <div>
+                    <label for="FirstName_tf">First Name</label>
+                </div>
+                <div>
+                    <input type="text" name="FirstName_tf" id="FirstName_tf" value="">
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="LastName_tf">Last Name</label>
+                </div>
+                <div>
+                    <input type="text" name="LastName_tf" id="LastName_tf" value="">
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="Address_tf">Address</label></div>
+                <div>
+                    <input type="text" name="Address_tf" id="Address_tf" value="">
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="Phone_tf">Phone</label></div>
+                <div>
+                    <input type="text" name="Phone_tf" id="Phone_tf" value="">
+                </div>
+            </p>
+            <p>
+                <div>
+                    <label for="Email_tf">Email Address</label>
+                </div>
+                <div>
+                    <input type="text" name="Email_tf" id="Email_tf" value="">
+                </div>
+            </p>
+            <a href="pizza_order.html">
+                <button>Next</button></a>
+        </div>
+    <!-- </form> -->
     <script type="text/JavaScript" scr="script/main.js"></script>
 </body>
 
