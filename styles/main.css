@@ -9,6 +9,37 @@ h1 {
     color: #fff;
 }
 
+h2 {
+    font-family: blakely, sans-serif;
+    font-size: 35px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: #fff;
+}
+
+p {
+    font-family: blakely, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+label {
+    font-family: blakely, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+input{
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+}
+
+header{
+    text-align: center;
+}
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("landing_background_med.jpg");
     height: 100%;
@@ -27,12 +58,21 @@ h1 {
     color: white;
 }
 
-button{
+button {
     font-family: bigcity-grotesque-pro, sans-serif;
-    padding:10px 25px;
+    padding: 10px 25px;
 }
 
-.info_page{
-    background-image: url("background.jpg");
-    background-repeat:repeat;
+.info_page {
+    background-color: #212121;
+    background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.contact_info {
+    border: #fff;
+    border-style: dotted;
+    border-spacing: 12px;
+    border-radius: 10px;
+    text-align: center;
 }
