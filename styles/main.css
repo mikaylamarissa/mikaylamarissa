@@ -5,7 +5,7 @@ html {
 
 h1 {
     font-family: Blakely, sans-serif;
-    font-size: 6em;
+    font-size: 9em;
     color: #fff;
 }
 
@@ -31,15 +31,16 @@ label {
     font-size: 25px;
 }
 
-input{
+input {
     border-radius: 20px;
     border: none;
     padding: 5px;
 }
 
-header{
+header {
     text-align: center;
 }
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("landing_background_med.jpg");
     height: 100%;
@@ -64,15 +65,47 @@ button {
 }
 
 .info_page {
+    padding-top: 60px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     background-color: #212121;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+.info_item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
 .contact_info {
+    text-align: center;
     border: #fff;
     border-style: dotted;
+    padding: 20px 100px;
     border-spacing: 12px;
     border-radius: 10px;
-    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.contact_items {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
 }
