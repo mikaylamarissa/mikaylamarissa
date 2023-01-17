@@ -63,11 +63,14 @@ header {
 button {
     font-family: bigcity-grotesque-pro, sans-serif;
     padding: 10px 25px;
+    background-color: #fff;
+    border-radius: 10%;
+    border:none;
 }
 
 .info_page {
     padding-top: 60px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -111,13 +114,13 @@ button {
     order: 0;
 }
 
-.order_page{
+.order_page {
     background-color: #212121;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-.order_section{
+.order_section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -126,9 +129,9 @@ button {
     align-content: center;
 }
 
-.order_item{
-    margin:10px;
-    width:280px;
+.order_item {
+    margin: 10px;
+    width: 280px;
     text-align: center;
     border: #fff;
     border-style: dotted;
@@ -142,4 +145,40 @@ button {
     align-self: auto;
     order: 0;
 }
+.order_row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
+.order_row_item{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
 
+@media screen and (min-width: 658px) {
+    .order_row{
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+    }
+    .order_row_item{
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+    }
+}
+
+@media screen and (min-width:997px) {}
