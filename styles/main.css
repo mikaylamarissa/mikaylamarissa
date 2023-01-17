@@ -71,14 +71,7 @@ button {
     border-radius: 10%;
     border: none;
 }
-
 .info_page {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     background-color: #212121;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -101,12 +94,13 @@ button {
     padding: 20px 100px;
     border-spacing: 12px;
     border-radius: 10px;
-    display: inline-flex;
+    width:280px;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
-    align-content: center;
+    align-content: stretch;
 }
 
 .contact_items {
@@ -117,7 +111,14 @@ button {
     align-self: auto;
     order: 0;
 }
-
+.contact_wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+}
 .order_page {
     background-color: #212121;
     background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
@@ -173,6 +174,28 @@ select {
 }
 
 @media screen and (min-width: 658px) {
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    label {
+        font-size: 1.9rem;
+    }
+
+    input {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width:997px) {
+    .order_item {
+        width: 330px;
+    }
+
     .order_row {
         display: inline-flex;
         flex-direction: row;
@@ -191,25 +214,10 @@ select {
         order: 0;
     }
 
-    .order_item {
-        width: 330px;
+    .hero-image {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/landing_background_med.jpg');
     }
-
-    h1 {
-        font-size: 8rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    label {
-        font-size: 1.9rem;
-    }
-
-    input {
-        padding: 10px;
+    .hero-text h1{
+        font-size: 16rem;
     }
 }
-
-@media screen and (min-width:997px) {}
