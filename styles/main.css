@@ -7,6 +7,7 @@ h1 {
     font-family: Blakely, sans-serif;
     font-size: 9em;
     color: #fff;
+    margin: 40px 5px;
 }
 
 h2 {
@@ -109,3 +110,36 @@ button {
     align-self: auto;
     order: 0;
 }
+
+.order_page{
+    background-color: #212121;
+    background-image: url("https://www.transparenttextures.com/patterns/french-stucco.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.order_section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.order_item{
+    margin:10px;
+    width:280px;
+    text-align: center;
+    border: #fff;
+    border-style: dotted;
+    padding: 20px 100px;
+    border-spacing: 12px;
+    border-radius: 10px;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
