@@ -5,14 +5,14 @@ html {
 
 h1 {
     font-family: Blakely, sans-serif;
-    font-size: 9em;
+    font-size: 7em;
     color: #fff;
-    margin: 40px 5px;
+    margin:20px;
 }
 
 h2 {
     font-family: blakely, sans-serif;
-    font-size: 35px;
+    font-size: 2rem;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     color: #fff;
@@ -29,7 +29,7 @@ label {
     font-family: blakely, sans-serif;
     color: #fff;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 input {
@@ -38,7 +38,7 @@ input {
     padding: 5px;
 }
 
-header {
+header{
     text-align: center;
 }
 
@@ -69,7 +69,6 @@ button {
 }
 
 .info_page {
-    padding-top: 60px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -88,6 +87,7 @@ button {
     flex-basis: auto;
     align-self: auto;
     order: 0;
+    margin-bottom: 1rem;
 }
 
 .contact_info {
@@ -162,6 +162,10 @@ button {
     order: 0;
 }
 
+select{
+    padding:5px;
+}
+
 @media screen and (min-width: 658px) {
     .order_row{
         display: inline-flex;
@@ -179,6 +183,24 @@ button {
         align-self: auto;
         order: 0;
     }
+
+    .order_item{
+        width:330px;
+    }
+    h1{
+        font-size: 8rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    label{
+        font-size: 1.9rem;
+    }
+    input{
+        padding:10px;
+    }
 }
 
-@media screen and (min-width:997px) {}
+@media screen and (min-width:997px) {
+
+}
