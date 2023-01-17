@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Final Project</title>
+    <title>MARGHERITA - Order</title>
     <meta charset="UTF-8">
     <link href="styles/main.css" rel="stylesheet">
     <!-- <script type="text/JavaScript" src="script/functions.js"></script> -->
@@ -17,7 +17,8 @@
     </header>
     <form method="post" name="myForm" action="https://httpbin.org/post" onsubmit="return (validateForm());">
         <div class="order_section">
-            <div class="order_item">
+            <div class="order_row">
+            <div class="order_item order_row_item">
                 <h2>Pick Your Pizza Size</h2>
                 <p>
                     <input type="radio" name="Size_rg" id="10" value="10" onclick="totalPrice()" />
@@ -31,8 +32,12 @@
                     <input type="radio" name="Size_rg" id="15" value="15" onclick="totalPrice()" />
                     <label>Large 15"</label>
                 </p>
+                <p>
+                    <input type="radio" name="Size_rg" id="17" value="15" onclick="totalPrice()" />
+                    <label>Extra Large 17"</label>
+                </p>
             </div>
-            <div class="order_item">
+            <div class="order_item order_row_item">
                 <h2>Toppings</h2>
                 <div id="checkboxes">
                     <p>
@@ -54,22 +59,23 @@
                     </p>
                 </div>
             </div>
+        </div>
             <div class="order_item">
                 <h2>Totals</h2>
                 <p>
-                    <label for="SubTotal_tb">SubTotal $:</label>
+                    <label for="SubTotal_tb">SubTotal $</label>
                     <input type="text" name="SubTotal_tb" id="SubTotal_tb" value="" readonly />
                 </p>
                 <p>
-                    <label for="PST_tb">PST $:</label>
+                    <label for="PST_tb">PST $</label>
                     <input type="text" name="PST_tb" id="PST_tb" value="" readonly>
                 </p>
                 <p>
-                    <label for="GST_tb">GST $:</label>
+                    <label for="GST_tb">GST $</label>
                     <input type="text" name="GST_tb" id="GST_tb" value="" readonly>
                 </p>
                 <p>
-                    <label for="Total_tb">Total $:</label>
+                    <label for="Total_tb">Total $</label>
                     <input type="text" name="Total_tb" id="Total_tb" value="" readonly>
                 </p>
             </div>
