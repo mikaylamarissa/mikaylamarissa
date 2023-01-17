@@ -131,3 +131,6 @@ function validateForm() {
     }
     return okay;
 }
+function myFunction() {
+    alert("The form was submitted");
+  }
