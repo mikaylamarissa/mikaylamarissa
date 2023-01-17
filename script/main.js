@@ -3,6 +3,7 @@ let pizzaSizes = new Array();
 pizzaSizes["10"] = 4;
 pizzaSizes["12"] = 5;
 pizzaSizes["15"] = 7;
+pizzaSizes["17"] = 10;
 
 function getPizzaPrices() {
     let pizzaPrice = 0;
