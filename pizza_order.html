@@ -13,55 +13,61 @@
 
 <body class="order_page">
     <header>
-        <h1>Margherita</h1>
+        <a href="index.html">
+            <h1>Margherita</h1>
+        </a>
+
     </header>
     <form method="post" name="myForm" action="https://httpbin.org/post" onsubmit="return (validateForm());">
         <div class="order_section">
             <div class="order_row">
-            <div class="order_item order_row_item">
-                <h2>Pick Your Pizza Size</h2>
-                <p>
-                    <input type="radio" name="Size_rg" id="10" value="10" onclick="totalPrice()" />
-                    <label>Small 10"</label>
-                </p>
-                <p>
-                    <input type="radio" name="Size_rg" id="12" value="12" onclick="totalPrice()" />
-                    <label>Medium 12"</label>
-                </p>
-                <p>
-                    <input type="radio" name="Size_rg" id="15" value="15" onclick="totalPrice()" />
-                    <label>Large 15"</label>
-                </p>
-                <p>
-                    <input type="radio" name="Size_rg" id="17" value="15" onclick="totalPrice()" />
-                    <label>Extra Large 17"</label>
-                </p>
-            </div>
-            <div class="order_item order_row_item">
-                <h2>Toppings</h2>
-                <div id="checkboxes">
+                <div class="order_item order_row_item">
+                    <h2>Pick Your Pizza Size</h2>
                     <p>
-                        <input type="checkbox" name="Anchovies_cb" id="Anchovies_cb" value="yes" onclick="totalPrice()">
-                        <label for="Anchovies_cb">Anchovies</label>
+                        <input type="radio" name="Size_rg" id="10" value="10" onclick="totalPrice()" />
+                        <label>Small 10"</label>
                     </p>
                     <p>
-                        <input type="checkbox" name="DoubleCheese_cb" id="DoubleCheese_cb" value="yes"
-                            onclick="totalPrice()">
-                        <label for="DoubleCheese_cb">Double Cheese</label>
+                        <input type="radio" name="Size_rg" id="12" value="12" onclick="totalPrice()" />
+                        <label>Medium 12"</label>
                     </p>
                     <p>
-                        <input type="checkbox" name="Pepperoni_cb" id="Pepperoni_cb" value="yes" onclick="totalPrice()">
-                        <label for="Pepperoni_cb">Pepperoni</label>
+                        <input type="radio" name="Size_rg" id="15" value="15" onclick="totalPrice()" />
+                        <label>Large 15"</label>
                     </p>
                     <p>
-                        <input type="checkbox" name="Mushroom_cb" id="Mushroom_cb" value="yes" onclick="totalPrice()">
-                        <label for="Mushroom_cb">Mushrooms</label>
+                        <input type="radio" name="Size_rg" id="17" value="17" onclick="totalPrice()" />
+                        <label>Extra Large 17"</label>
                     </p>
                 </div>
+                <div class="order_item order_row_item">
+                    <h2>Pick your Toppings</h2>
+                    <div id="checkboxes">
+                        <p>
+                            <input type="checkbox" name="Anchovies_cb" id="Anchovies_cb" value="yes"
+                                onclick="totalPrice()">
+                            <label for="Anchovies_cb">Anchovies</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="DoubleCheese_cb" id="DoubleCheese_cb" value="yes"
+                                onclick="totalPrice()">
+                            <label for="DoubleCheese_cb">Double Cheese</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="Pepperoni_cb" id="Pepperoni_cb" value="yes"
+                                onclick="totalPrice()">
+                            <label for="Pepperoni_cb">Pepperoni</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="Mushroom_cb" id="Mushroom_cb" value="yes"
+                                onclick="totalPrice()">
+                            <label for="Mushroom_cb">Mushrooms</label>
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
             <div class="order_item">
-                <h2>Totals</h2>
+                <h2>Totals shown here</h2>
                 <p>
                     <label for="SubTotal_tb">SubTotal $</label>
                     <input type="text" name="SubTotal_tb" id="SubTotal_tb" value="" readonly />
@@ -80,7 +86,7 @@
                 </p>
             </div>
             <div class="order_item">
-                <h2>Payment</h2>
+                <h2>Select a payment method</h2>
                 <p>
                     <select name="Payment_menu">
                         <option value="select">- Select Payment Method -</option>

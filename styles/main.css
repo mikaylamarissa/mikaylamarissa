@@ -7,7 +7,7 @@ h1 {
     font-family: Blakely, sans-serif;
     font-size: 7em;
     color: #fff;
-    margin:20px;
+    margin: 20px;
 }
 
 h2 {
@@ -38,8 +38,12 @@ input {
     padding: 5px;
 }
 
-header{
+header {
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .hero-image {
@@ -65,7 +69,7 @@ button {
     padding: 10px 25px;
     background-color: #fff;
     border-radius: 10%;
-    border:none;
+    border: none;
 }
 
 .info_page {
@@ -145,7 +149,8 @@ button {
     align-self: auto;
     order: 0;
 }
-.order_row{
+
+.order_row {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -153,7 +158,8 @@ button {
     align-items: center;
     align-content: stretch;
 }
-.order_row_item{
+
+.order_row_item {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
@@ -162,12 +168,12 @@ button {
     order: 0;
 }
 
-select{
-    padding:5px;
+select {
+    padding: 5px;
 }
 
 @media screen and (min-width: 658px) {
-    .order_row{
+    .order_row {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -175,7 +181,8 @@ select{
         align-items: center;
         align-content: stretch;
     }
-    .order_row_item{
+
+    .order_row_item {
         display: block;
         flex-grow: 0;
         flex-shrink: 1;
@@ -184,23 +191,25 @@ select{
         order: 0;
     }
 
-    .order_item{
-        width:330px;
+    .order_item {
+        width: 330px;
     }
-    h1{
+
+    h1 {
         font-size: 8rem;
     }
-    h2{
+
+    h2 {
         font-size: 2.5rem;
     }
-    label{
+
+    label {
         font-size: 1.9rem;
     }
-    input{
-        padding:10px;
+
+    input {
+        padding: 10px;
     }
 }
 
-@media screen and (min-width:997px) {
-
-}
+@media screen and (min-width:997px) {}
