@@ -1,4 +1,4 @@
-### hello friends, 
+### Hello friends, 
 
 I'm Mikayla, currently a student in the Interactive Design and Technology program at Saskatchewan Polytech. I've been coding for about a year and a half, and I love the problem solving that is required with it and always getting to learning new things.
 
