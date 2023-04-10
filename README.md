@@ -9,6 +9,8 @@ While I am new to the coding world I have learned many different programming lan
 - Javascript
 - HTML
 - CSS
+- React JS
+- React Native
 - PHP
 - JSON
 
